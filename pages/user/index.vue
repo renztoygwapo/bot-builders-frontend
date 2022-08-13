@@ -22,7 +22,7 @@
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer ' + token.value.token
+          'Authorization': 'Bearer ' + token ? token.value?.token : null
         },
         body: {
           name: userState.name,

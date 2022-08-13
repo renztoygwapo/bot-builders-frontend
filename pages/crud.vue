@@ -13,7 +13,7 @@
             headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer ' + token.value.token
+            'Authorization': 'Bearer ' + token ? token.value?.token : null
             }
         })
         localState.user = response
@@ -26,7 +26,7 @@
             headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer ' + token.value.token
+            'Authorization': 'Bearer ' + token ? token.value.token : null
             }
         })
         onLoad()
