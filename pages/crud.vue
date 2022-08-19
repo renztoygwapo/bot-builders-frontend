@@ -37,7 +37,7 @@
         navigateTo(`/user/${id}`)
     }
     // load users
-    onLoad()
+    // onLoad()
 </script>
 <template>
   <div>
